@@ -5,7 +5,7 @@
     box-sizing: border-box;
     font-family: 'Poppins',sans-serif;
     scroll-behavior: smooth;
-    /* scrollbar-width: none; */
+    scrollbar-width: none;
 }
 
 body{
@@ -14,4 +14,21 @@ body{
     align-items: center;
     min-height: 100vh;
     background: linear-gradient(135deg,#14303C,#000000);
+}
+
+.page{
+    margin: 50px;
+    width: 775px;
+    height: 1096.25px;
+    background-color: #fff;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.right_side{
+    position: relative;
+    float: right;
+    width: 43.5%;
+    height: 100%;
+    background: #14303C;
 }
