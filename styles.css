@@ -31,7 +31,7 @@ body{
 
 .right_side{
     position: relative;
-    display: inline;
+    display: block;
     float: right;
     width: 43.5%;
     height: 100%;
@@ -48,14 +48,14 @@ body{
     margin-right: auto;
 }
 
-.contact{
+.item{
     display: grid;
-    margin: 20px;
     margin-left: auto;
     margin-right: auto;
+    margin-bottom: 20px;
 }
 
-h3{
+.item h3{
     position: relative;
     display: block;
     color: #fff;
@@ -95,14 +95,7 @@ li.grid{
     margin-top: 20px;
 }
 
-.logiciels{
-    display: grid;
-    margin: 20px;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.logi{
+.text{
     margin-bottom: 15px;
     display: block;
     font-size: 15px;
@@ -130,4 +123,35 @@ li.grid{
     width: var(--prog);
     border-radius: 15px;
     margin-left: 2px;
+}
+
+.left_side{
+    position: relative;
+    display: block;
+    float: left;
+    width: 56.5%;
+    height: 100%;
+    background: #fff;
+    justify-content: center;
+}
+
+.presentation{
+    display: grid;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+}
+
+.left h1{
+    margin: 20px 20px 10px 20px;
+}
+
+.left h3{
+    margin: 0px 20px 20px 20px;
+}
+
+.left p{
+    margin: 0px 20px 20px 20px;
+    font-size: .9em;
+    color: #525252;
 }
