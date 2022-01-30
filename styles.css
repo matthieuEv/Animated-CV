@@ -27,7 +27,7 @@ body{
 
 .right_side{
     position: relative;
-    display: flex;
+    display: inline;
     float: right;
     width: 43.5%;
     height: 100%;
@@ -36,8 +36,56 @@ body{
 }
 
 .profil{
-    position: relative;
     width: 200px;
     height: 250px;
     margin: 20px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.contact{
+    display: grid;
+    margin: 20px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+h3{
+    position: relative;
+    display: block;
+    color: #fff;
+    margin-left: 50px;
+}
+
+.line{
+    position: relative;
+    display: block;
+    background: #fff;
+    width: 250px;
+    height: 1.5px;
+    margin-left: 50px;
+    margin-bottom: 20px;
+    border-radius: 1.5px;
+}
+
+ul{
+    position: relative;
+    display: block;
+    color: #fff;
+    margin-left: 50px;
+}
+
+li{
+    position: relative;
+    display: block;
+    float: left;
+}
+
+.icon{
+    color: #fff;
+    position: relative;
+    font-size: 40px;
+    margin-right: 20px;
+    margin-top: 20px;
 }
