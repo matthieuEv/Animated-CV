@@ -6,6 +6,7 @@
     font-family: 'Poppins',sans-serif;
     scroll-behavior: smooth;
     scrollbar-width: none;
+    user-select: none;
 }
 
 body{
@@ -239,4 +240,41 @@ li.grid{
 
 .left ul{
     margin-left: 20px;
+}
+
+.vertical-line{
+    position: absolute;
+    height: 2px;
+    border-radius: 2px;
+    background-color: #525252;
+}
+
+.point{
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background-color: #000;
+    border-radius: 10px;
+}
+
+.formations .vertical-line{
+    width: 180px;
+    transform:  rotate(90deg)
+                translateX(90px)
+                translateY(-50px);
+}
+
+.formations .point.p1{
+    transform: translateX(135px)
+                translateY(10px);
+}
+
+.formations .point.p2{
+    transform: translateX(135px)
+                translateY(80px);
+}
+
+.formations .point.p3{
+    transform: translateX(135px)
+                translateY(150px);
 }
