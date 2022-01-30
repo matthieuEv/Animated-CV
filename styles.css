@@ -16,6 +16,10 @@ body{
     background: linear-gradient(135deg,#14303C,#000000);
 }
 
+::-webkit-scrollbar{
+    display: none;
+}
+
 .page{
     margin: 50px;
     width: 775px;
@@ -74,9 +78,10 @@ ul{
     display: block;
     color: #fff;
     margin-left: 50px;
+    list-style: none;
 }
 
-li{
+li.grid{
     position: relative;
     display: block;
     float: left;
@@ -88,4 +93,40 @@ li{
     font-size: 40px;
     margin-right: 20px;
     margin-top: 20px;
+}
+
+.logiciels{
+    display: grid;
+    margin: 20px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.logi{
+    margin-bottom: 15px;
+    display: block;
+}
+
+.bar{
+    position: relative;
+    display: flex;
+    float: right;
+    background: #fff;
+    height: 15px;
+    width: 150px;
+    margin-right: 40px;
+    margin-top: 5px;
+    border-radius: 15px;
+    align-items: center;
+}
+
+.percent{
+    position: relative;
+    display: block;
+    float: right;
+    background: linear-gradient(-90deg,#14303C,#b6b6b6);
+    height: 12px;
+    width: var(--prog);
+    border-radius: 15px;
+    margin-left: 2px;
 }
