@@ -155,3 +155,85 @@ li.grid{
     font-size: .9em;
     color: #525252;
 }
+
+.work{
+    display: block;
+    margin-top: -100px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+    height: 130px;
+    align-items: center;
+    justify-content: center;
+}
+
+.date{
+    color: #525252;
+    float: left;
+    margin: 15px 0px 15px 20px;
+    height: 100px;
+    width: 100px;
+    contain: content;
+    font-size: .8em;
+}
+
+.experience{
+    color: #525252;
+    float: right;
+    margin: 15px 20px 15px 0px;
+    height: 100px;
+    width: 250px;
+}
+
+.experience p{
+    margin: 0;
+    color: #000;
+}
+
+.experience .text{
+    position: relative;
+    display: block;
+    font-size: .8em;
+    padding-left: 10px;
+    line-height: 12px;
+}
+
+.vertical-line{
+    position: relative;
+    display: block;
+    background: #525252;
+    width: 275px;
+    height: 1.5px;
+    margin-left: 50px;
+    margin-bottom: 20px;
+    border-radius: 1.5px;
+    transform: rotate(90deg)
+               translateX(225px)
+               translateY(50px);
+}
+
+.p_1{
+    position: relative;
+    display: block;
+    background: #000;
+    width: 12px;
+    height: 12px;
+    border-radius: 12px;
+    margin-left: 50px;
+    margin-bottom: 20px;
+    transform: translateX(82px)
+               translateY(82px);
+}
+
+.p_2{
+    position: relative;
+    display: block;
+    background: #000;
+    width: 12px;
+    height: 12px;
+    border-radius: 12px;
+    margin-left: 50px;
+    margin-bottom: 20px;
+    transform: translateX(82px)
+               translateY(202px);
+}
