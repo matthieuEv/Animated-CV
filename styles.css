@@ -113,6 +113,7 @@ li.grid{
     margin-top: 5px;
     border-radius: 15px;
     align-items: center;
+    contain: content;
 }
 
 .percent{
@@ -120,10 +121,19 @@ li.grid{
     display: block;
     float: right;
     background: linear-gradient(-90deg,#14303C,#b6b6b6);
-    height: 12px;
+    height: 100%;
     width: var(--prog);
     border-radius: 15px;
-    margin-left: 2px;
+}
+
+.text .percent{
+    position: relative;
+    display: block;
+    float: right;
+    background: linear-gradient(90deg,#14303C,#b6b6b6);
+    height: 100%;
+    width: var(--prog);
+    border-radius: 15px;
 }
 
 .left_side{
