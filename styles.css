@@ -264,9 +264,21 @@ li.grid{
                 translateY(-50px);
 }
 
+.experiences .vertical-line{
+    width: 270px;
+    transform:  rotate(90deg)
+                translateX(145px)
+                translateY(-5px);
+}
+
 .formations .point.p1{
     transform: translateX(135px)
                 translateY(10px);
+}
+
+.experiences .point.p1{
+    transform: translateX(135px)
+                translateY(25px);
 }
 
 .formations .point.p2{
@@ -274,7 +286,47 @@ li.grid{
                 translateY(80px);
 }
 
+.experiences .point.p2{
+    transform: translateX(135px)
+                translateY(175px);
+}
+
 .formations .point.p3{
     transform: translateX(135px)
                 translateY(150px);
+}
+
+.grid .tooltiptext {
+    visibility: hidden;
+    width: 150px;
+    background-color: #fff;
+    color: #14303C;
+    text-align: center;
+    font-size: 0.9rem;
+    border-radius: 6px;
+    padding: 5px 2px;
+    position: absolute;
+    z-index: 1;
+    bottom: 125%;
+    left: 10%;
+    margin-left: -60px;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.grid .tooltiptext::after {
+    content: "";
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    margin-left: -7px;
+    border-width: 7px;
+    border-style: solid;
+    rotate: 45deg;
+    border-color: #fff;
+}
+
+.grid:hover .tooltiptext {
+    visibility: visible;
+    opacity: 1;
 }
