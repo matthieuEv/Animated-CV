@@ -31,13 +31,15 @@ body{
 }
 
 .right_side{
+    opacity: 0;
     position: relative;
     display: block;
     float: right;
     width: 43.5%;
-    height: 100%;
     background: #14303C;
     justify-content: center;
+    animation: from_right .5s linear forwards;
+    animation-delay: .2s;
 }
 
 .profil{
@@ -170,6 +172,7 @@ li.grid{
 
 .left h1{
     margin: 20px 20px 10px 20px;
+    opacity: 0;animation: from_left .5s linear forwards;animation-delay: .5s;
 }
 
 .left h3{
@@ -356,6 +359,9 @@ li.grid{
     opacity: 1;
 }
 
+
+/*========== KEYFRAMES ==========*/
+
 @keyframes picture_slider {
     0%{
         transform: translateX(0px);
@@ -366,5 +372,35 @@ li.grid{
     }
     100%{
         transform: translateX(-400px);
+    }
+}
+
+@keyframes from_right {
+    0%{
+        transform: translateX(300px);
+    }
+    100%{
+        transform: translateX(0px);
+        opacity: 1;
+    }
+}
+
+@keyframes from_left {
+    0%{
+        transform: translateX(-300px);
+    }
+    100%{
+        transform: translateX(0px);
+        opacity: 1;
+    }
+}
+
+@keyframes from_bottom {
+    0%{
+        transform: translateY(200px);
+    }
+    100%{
+        transform: translateY(0px);
+        opacity: 1;
     }
 }
