@@ -141,16 +141,12 @@ li.grid{
     position: relative;
     display: block;
     float: right;
-    background: linear-gradient(-90deg,#14303C,#b6b6b6);
     height: 100%;
     width: var(--prog);
     border-radius: 15px;
     font-size: .7em;
     padding-left: 10px;
-}
-
-.text .percent{
-    background: linear-gradient(90deg,#14303C,#b6b6b6);
+    animation: skills_bar 10s infinite linear;
 }
 
 .left_side{
@@ -402,5 +398,14 @@ li.grid{
     100%{
         transform: translateY(0px);
         opacity: 1;
+    }
+}
+
+@keyframes skills_bar {
+    0%{
+        background: linear-gradient(90deg,#14303C,#b6b6b6);
+    }
+    100%{
+        background: linear-gradient(90deg,#14303C,#b6b6b6);
     }
 }
