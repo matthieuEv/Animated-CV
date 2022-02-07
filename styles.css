@@ -21,6 +21,39 @@ body{
     display: none;
 }
 
+.close_btn{
+    top: 50px;
+    right: 50px;
+    position: absolute;
+    display: flex;
+    background-color: #fff;
+    width: 50px;
+    height: 50px;
+    border-radius: 5px;
+    justify-content: center;
+    align-items: center;
+}
+
+.close_btn:hover .close{
+    opacity: 1;
+    rotate: 90deg;
+}
+
+.close{
+    color: rgb(20, 49, 61);
+    position: absolute;
+    display: inline-block;
+    font-size: 4em;
+    font-weight: 100;
+    opacity: .3;
+    transition: .3s;
+}
+
+.close:after{
+    display: inline-block;
+    content: "\00d7";
+}
+
 .page{
     margin: 50px;
     width: 775px;
@@ -184,7 +217,6 @@ li.grid{
 
 .work{
     display: block;
-    /* margin-top: -100px; */
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 20px;
