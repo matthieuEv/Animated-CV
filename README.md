@@ -1,4 +1,6 @@
 
 # Animated CV
 
-A CV with animations
+Un cv spécial avec animations
+
+Enjoy ;)
